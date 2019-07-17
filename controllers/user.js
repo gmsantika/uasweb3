@@ -5,6 +5,7 @@ dotenv.config();
 
 const User = require('../models/user');
 
+//test comment
 module.exports.postRegister = (req, res) => {
 	var salt = bcrypt.genSaltSync(10);
 	var hash = bcrypt.hashSync(req.body.password, salt);
