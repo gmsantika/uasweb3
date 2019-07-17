@@ -27,6 +27,7 @@ module.exports.postRegister = (req, res) => {
 		})
 }
 
+//post login
 module.exports.postLogin = (req, res) => {
 	User.findOne({
 		where: {
