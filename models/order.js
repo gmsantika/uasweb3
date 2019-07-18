@@ -9,9 +9,7 @@ class Order extends Sequelize.Model {}
 Order.init({
     tanggal_order: Sequelize.STRING
 }, {
-    sequelize,
-    modelName: 'order'
-});
+    sequelize,modelName: 'order'});
 // Will also add userId to Task model, but field will be set to `user_id`
 // This means column name will be `user_id`
 Order.belongsTo(user);
