@@ -8,9 +8,7 @@ module.exports.getIndexBooks = (req, res) => {
 }
 
 module.exports.getOneBook = (req, res) => {
-	if (error) {
-		res.json({message: error});
-	} else {
+	
 		Books.findOne({
 			where: {
 				id: req.params.id
@@ -22,7 +20,7 @@ module.exports.getOneBook = (req, res) => {
 		.catch((error) => {
 			console.log(error);
 		})
-	}
+	
 }
 
 module.exports.postBooks = (req, res) => {
